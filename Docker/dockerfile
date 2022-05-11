@@ -1,0 +1,12 @@
+#Choix de la distrib
+from ubuntu
+
+# idem que la commande cd
+workdir .
+
+#créer un nouveau dossier dans notre répértoire home
+run mkdir -p /home/
+
+#copier un fichier de la vm vers le conteneur
+copy test.c /home/
+

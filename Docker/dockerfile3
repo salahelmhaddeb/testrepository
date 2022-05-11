@@ -1,0 +1,18 @@
+#Choix de la distrib
+from alpine
+
+#maj et installation des paquets
+run apk update && apk add nano \
+    curl \
+    vim \
+    htop \
+    git
+# idem que la commande cd
+workdir .
+
+#créer un nouveau dossier dans notre répértoire home
+run mkdir -p /home/nouveaudossier/
+
+#copier un fichier de la vm vers le conteneur
+copy test.c /home/nouveaudossier/
+
